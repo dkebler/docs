@@ -4,7 +4,9 @@ Tasmota supports several I2C devices but to use them they mostly need to be enab
 
 ### Look at [Pre-Compiled Builds](https://github.com/arendst/Tasmota/blob/development/BUILDS.md) to see, which Driver is compiled in the release binarys.
 
-Using command ``I2cDriver`` individual drivers can be enabled or disabled at runtime allowing duplicate I2C addresses at compile time. Use the Index from the table below to control I2C drivers like ``I2cDriver10 0`` for disabling BMP support.
+Using command ``I2cDriver`` issued at a terminal console individual drivers can be enabled or disabled at runtime allowing duplicate I2C addresses at compile time. Use the Index from the table below to control I2C drivers like ``I2cDriver10 0`` for disabling BMP support.
+
+If your sensor is reporting a value of another sensor which is not attached then the auto detection has failed.  In this case find the index of the offending sensor and disable it per above.  
 
 ## Supported I2C devices
 The following table lists the supported I2C devices
